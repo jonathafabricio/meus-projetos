@@ -22,7 +22,7 @@ body {
 
 .main::before {
     content: '';
-    background-image: url('assets/img/fundos/f05.png');
+    background-image: url('/assets/img/fundos/f05.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
