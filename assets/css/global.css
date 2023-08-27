@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Neue Machine';
+    src: url(../fonts/NeueMachina-Regular.otf);
+}
+
+body {
+    background-color: rgb(182, 60, 60);
+    color: white ;
+}
+
+.main {
+    border: 1px solid white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.main::before {
+    content: '';
+    background-image: url('/assets/img/fundos/f05.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 900px;
+    height: 900px;
+    z-index: -1;    
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+    .main::before{
+        bottom: -740px;
+        left: 4px;
+        width: 1290px;
+        height: 1864px;
+    }
+  }
