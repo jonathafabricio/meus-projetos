@@ -28,6 +28,8 @@
 .header .title {
     text-align: center;
     font-family: 'Neue Machine';
+    font-size: 1.8rem;
+    min-width: 70%;
 }
 
 
@@ -80,6 +82,29 @@
         grid-area: title;
         text-align: start;
         max-width: 210px;
+        font-size: 2rem;
     }
 
   }
+
+  @media only screen and (max-width: 767px) {
+    .header .title {
+        font-size: 1.2rem;
+    }
+}
+
+  @media only screen and (max-width: 384px) {
+    .email {
+        font-size: 1rem !important;
+    }
+}
+  @media only screen and (max-width: 356px) {
+    .email {
+        font-size: 0.8rem !important;
+    }
+}
+  @media only screen and (max-width: 299px) {
+    .email {
+        font-size: 0.6rem !important;
+    }
+}
